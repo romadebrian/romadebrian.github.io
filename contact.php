@@ -1,8 +1,7 @@
 <?php
 if ($_POST) {
     $Email = "";
-    $Nama = "";
-    $Email_Title = "";
+    $Name = "";
     $Isi_Email = "";
 
     if (isset($_POST['frm_email'])) {
@@ -11,17 +10,7 @@ if ($_POST) {
     }
 
     if (isset($_POST['frm_name'])) {
-        $visitor_name = filter_var($_POST['visitor_name'], FILTER_SANITIZE_STRING);
-    }
-
-
-
-    if (isset($_POST['email_title'])) {
-        $email_title = filter_var($_POST['email_title'], FILTER_SANITIZE_STRING);
-    }
-
-    if (isset($_POST['concerned_department'])) {
-        $concerned_department = filter_var($_POST['concerned_department'], FILTER_SANITIZE_STRING);
+        $Name = filter_var($_POST['frm_name'], FILTER_SANITIZE_STRING);
     }
 
     if (isset($_POST['visitor_message'])) {
