@@ -236,7 +236,7 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-md-8">
-            <form>
+            <form action="http://romadebrian.rf.gd/contact.php" method="post">
               <div class="mb-3">
                 <label for="email" class="form-label">Email</label>
                 <input
@@ -244,6 +244,7 @@
                   class="form-control"
                   id="email"
                   aria-describedby="emailHelp"
+                  name="frm_email"
                 />
               </div>
               <div class="mb-3">
@@ -253,11 +254,17 @@
                   class="form-control"
                   id="email"
                   aria-describedby="emailHelp"
+                  name="frm_name"
                 />
               </div>
               <div class="mb-3">
                 <label for="pesan" class="form-label">Pesan</label>
-                <textarea class="form-control" id="pesan" rows="3"></textarea>
+                <textarea
+                  class="form-control"
+                  id="pesan"
+                  rows="3"
+                  name="frm_pesan"
+                ></textarea>
               </div>
               <button type="submit" class="btn btn-primary">Kirim</button>
             </form>
