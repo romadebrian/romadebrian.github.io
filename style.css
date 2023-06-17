@@ -10,3 +10,15 @@
 section {
   padding-top: 5rem;
 }
+
+.text-secondary {
+  color: #2a2a2a;
+}
+
+#contact span {
+  font-size: larger;
+}
+
+.list-contact {
+  width: fit-content;
+}
