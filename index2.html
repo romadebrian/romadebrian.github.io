@@ -234,44 +234,46 @@
 
     <!-- Contact -->
     <section id="contact">
-      <div class="container d-flex flex-column">
-        <div class="text-center mb-4">
+      <div class="container">
+        <div class="row text-center mb-4">
           <div class="col">
-            <h2>Kontak</h2>
+            <h2>Contact</h2>
           </div>
         </div>
-        <div class="d-flex g-success justify-content-center">
-          <div class="list-contact">
-            <!-- <div class="mb-3" style="font-size: 18px">
-              <i class="bi bi-envelope"></i>
-              <span class="text-secondary">romadebrian@yahoo.co.id</span>
-            </div> -->
-            <div class="mb-3">
-              <i class="bi bi-linkedin"></i>
-              <span class="text-secondary"
-                ><a href="https://www.linkedin.com/in/roma-debrian-31a973140/"
-                  >LinkedIn</a
-                ></span
-              >
-            </div>
-            <div class="mb-3">
-              <i class="bi bi-twitter"></i>
-              <span class="text-secondary"
-                ><a href="https://twitter.com/Romadebrian">Twitter</a></span
-              >
-            </div>
-            <div class="mb-3">
-              <i class="bi bi-facebook"></i>
-              <span class="text-secondary"
-                ><a href="https://www.facebook.com/romadebrian/"
-                  >Facebook</a
-                ></span
-              >
-            </div>
-            <div class="mb-3">
-              <i class="bi bi-geo-alt"></i>
-              <span class="text-secondary">Kab. Bekasi, Babelan</span>
-            </div>
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <form action="http://romadebrian.rf.gd/contact.php" method="post">
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  aria-describedby="emailHelp"
+                  name="frm_email"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="nama" class="form-label">Nama</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="email"
+                  aria-describedby="emailHelp"
+                  name="frm_name"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="pesan" class="form-label">Pesan</label>
+                <textarea
+                  class="form-control"
+                  id="pesan"
+                  rows="3"
+                  name="frm_pesan"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Kirim</button>
+            </form>
           </div>
         </div>
       </div>
